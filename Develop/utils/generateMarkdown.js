@@ -42,8 +42,7 @@ return`Licensed under the ${renderLicenseLink(license)}`
 //renderLicenseSection();
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  //console.log(renderLicenseSection(data.license));
-  //console.log(renderLicenseBadge(data.license));
+  
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
   ## Table of Contents
@@ -64,7 +63,9 @@ function generateMarkdown(data) {
   ## Installation
   ${data.installation}
   ## Questions
-  ${data.questions1}
+  Please contact me at:
+  ${data.questions1} 
+  or 
   ${data.questions2}
   ## Tests
   ${data.tests}

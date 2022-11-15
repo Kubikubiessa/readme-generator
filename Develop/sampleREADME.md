@@ -1,5 +1,5 @@
-# kkk
-  [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+# Best App Ever
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
   - [description](#Description)
   - [usage](#Usage)
@@ -10,17 +10,19 @@
   - [license](#License)
 
   ## Description
-  
+  It is the best app ever.
   ## Usage
-  uu
+  To solve all the world's problems.
   ## Contributing
-  uu
+  You may try, but the app is already perfect.
   ## Installation
-  uuu
+  It will install itself.
   ## Questions
-  uuu
-  uu
+  Please contact me at:
+  https://github.com/Kubikubiessa 
+  or 
+  bestdev@gmail.com
   ## Tests
-  uu
+  No tests needed, since the app is already perfect. 
   ## License
-  Licensed under the [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+  Licensed under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
