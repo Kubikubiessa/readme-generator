@@ -1,11 +1,16 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { generateMarkdown } = require('./utils/generateMarkdown')
-//const utils = require('utils')
-
+const generateMarkdown = require('./utils/generateMarkdown.js')
+ 
 // TODO: Create an array of questions for user input
 const questions = [
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of your project?',
+
+    },
     {
         type: 'input',
         name: 'contents',
@@ -43,12 +48,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions-github',
+        name: 'questions1',
         message: 'Please provide a full link to your Github account.', //github link added to readme link tag
     },
     {
         type: 'input',
-        name: 'questions-email',
+        name: 'questions2',
         message: 'Please provide your email.',//email link added to readme link tag
     },
     {
@@ -56,14 +61,14 @@ const questions = [
         name: 'license',
         message: 'Please choose a license for your project.',
         choices: [
-            'MIT ',
+             'Apache', 'GPL', 'MIT', 'Mozilla', 'The Unlicense'
         ]
     }
 
 ];
 
 // TODO: Create a function to write README file
-/*function writeToFile(fileName, data) {
+/*function writeToFile(fileName, JSON.stringify(data) => {
     const markdown = generateMarkdown(data);
     fs.writeFile('sampleREADME.md', markdown, err => err ? console.error(err) : console.log('README generated'));
 
@@ -71,10 +76,13 @@ const questions = [
 
 // TODO: Create a function to initialize app
 function init() {
-    const userResponses = inquirer.prompt(questions).then(responses => {
-        console.log(responses);
+    inquirer.prompt(questions).then(data => {
+        console.log(data);
+    const markdown = generateMarkdown(data);
+    fs.writeFile('sampleREADME.md', markdown, err => err ? console.error(err) : console.log('README generated'));
+
     });
-    //console.log('User responses: ', userResponses);
+ 
 }
 
 // Function call to initialize app
